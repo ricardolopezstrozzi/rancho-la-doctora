@@ -1,0 +1,2828 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rancho La Doctora | Predio premium en General Cepeda, Coahuila</title>
+  <meta name="description" content="Rancho La Doctora: 462 hectáreas privadas en venta en General Cepeda, Coahuila. Bosque pino-encino, manantiales naturales, escrituras individuales y potencial de inversión.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --carbon: #171816;
+      --carbon-2: #22241f;
+      --olive-950: #172016;
+      --olive-900: #202d1f;
+      --olive-800: #30422d;
+      --olive-700: #44593d;
+      --sand-300: #d9caa8;
+      --sand-200: #e8ddc3;
+      --sand-100: #f5efdf;
+      --warm: #fbf8ef;
+      --stone: #78756d;
+      --stone-2: #b8b0a1;
+      --line: rgba(38, 39, 33, 0.12);
+      --line-dark: rgba(232, 221, 195, 0.18);
+      --shadow-soft: 0 24px 70px rgba(23, 24, 22, 0.12);
+      --shadow-deep: 0 36px 90px rgba(0, 0, 0, 0.36);
+      --max: 1240px;
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "Inter", Arial, sans-serif;
+      --ease: cubic-bezier(.2, .8, .2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--carbon);
+    }
+
+    body {
+      min-width: 320px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0) 420px),
+        var(--warm);
+      color: var(--carbon);
+      font-family: var(--sans);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: geometricPrecision;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    ::selection {
+      background: var(--olive-700);
+      color: var(--warm);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      pointer-events: none;
+      opacity: .46;
+      background-image:
+        linear-gradient(rgba(23, 24, 22, .025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 24, 22, .018) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 44px));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--olive-700);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .24em;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 42px;
+      height: 1px;
+      background: currentColor;
+      opacity: .65;
+    }
+
+    .section-kicker {
+      margin-bottom: 18px;
+    }
+
+    .section-heading {
+      max-width: 820px;
+    }
+
+    .section-heading.center {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .section-heading.center .eyebrow {
+      justify-content: center;
+    }
+
+    .section-heading h2 {
+      margin-top: 14px;
+      color: var(--olive-950);
+      font-family: var(--serif);
+      font-size: clamp(2.25rem, 5vw, 4.85rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: .98;
+    }
+
+    .section-heading h2 em,
+    .hero-title em {
+      color: var(--olive-700);
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .section-heading p {
+      max-width: 690px;
+      margin-top: 22px;
+      color: rgba(23, 24, 22, .72);
+      font-size: clamp(1rem, 1.45vw, 1.13rem);
+      font-weight: 300;
+    }
+
+    .section-heading.center p {
+      margin-inline: auto;
+    }
+
+    .btn {
+      position: relative;
+      display: inline-flex;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 15px 24px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      line-height: 1;
+      overflow: hidden;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition:
+        border-color .32s var(--ease),
+        background .32s var(--ease),
+        color .32s var(--ease),
+        transform .32s var(--ease),
+        box-shadow .32s var(--ease);
+      white-space: nowrap;
+    }
+
+    .btn svg {
+      width: 17px;
+      height: 17px;
+      flex: 0 0 auto;
+      transition: transform .32s var(--ease);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn:hover svg {
+      transform: translateX(2px);
+    }
+
+    .btn-primary {
+      background: var(--sand-300);
+      color: var(--carbon);
+      box-shadow: 0 18px 38px rgba(0, 0, 0, .22);
+    }
+
+    .btn-primary:hover {
+      background: var(--warm);
+      box-shadow: 0 22px 46px rgba(0, 0, 0, .28);
+    }
+
+    .btn-dark {
+      background: var(--olive-950);
+      color: var(--warm);
+    }
+
+    .btn-dark:hover {
+      background: var(--carbon);
+    }
+
+    .btn-ghost {
+      border-color: rgba(245, 239, 223, .38);
+      color: var(--warm);
+      background: rgba(255, 255, 255, .045);
+      backdrop-filter: blur(14px);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--sand-300);
+      background: rgba(255, 255, 255, .11);
+    }
+
+    .btn-outline-dark {
+      border-color: rgba(23, 24, 22, .28);
+      color: var(--olive-950);
+      background: transparent;
+    }
+
+    .btn-outline-dark:hover {
+      border-color: var(--olive-950);
+      background: var(--olive-950);
+      color: var(--warm);
+    }
+
+    .icon {
+      width: 22px;
+      height: 22px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.65;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .site-nav {
+      position: fixed;
+      inset: 18px 0 auto;
+      z-index: 50;
+      pointer-events: none;
+    }
+
+    .nav-shell {
+      width: min(var(--max), calc(100% - 34px));
+      min-height: 68px;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 10px 12px 10px 20px;
+      border: 1px solid rgba(245, 239, 223, .20);
+      border-radius: 8px;
+      background: rgba(23, 24, 22, .72);
+      box-shadow: 0 18px 54px rgba(0, 0, 0, .20);
+      backdrop-filter: blur(18px);
+      pointer-events: auto;
+    }
+
+    .brand {
+      min-width: 0;
+      color: var(--warm);
+      text-decoration: none;
+    }
+
+    .brand strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 23px;
+      font-weight: 450;
+      letter-spacing: -.01em;
+      line-height: 1;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 5px;
+      color: rgba(245, 239, 223, .66);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .20em;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 12px;
+      border-radius: 4px;
+      color: rgba(245, 239, 223, .74);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background .25s var(--ease), color .25s var(--ease);
+    }
+
+    .nav-links a:hover {
+      background: rgba(245, 239, 223, .10);
+      color: var(--warm);
+    }
+
+    .nav-cta {
+      min-height: 42px;
+      padding-inline: 16px;
+      background: var(--sand-300);
+      color: var(--carbon);
+      box-shadow: none;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(245, 239, 223, .22);
+      border-radius: 4px;
+      background: rgba(255, 255, 255, .05);
+      color: var(--warm);
+      cursor: pointer;
+    }
+
+    .menu-toggle span,
+    .menu-toggle::before,
+    .menu-toggle::after {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 1px;
+      margin: 5px auto;
+      background: currentColor;
+      transition: transform .25s var(--ease), opacity .25s var(--ease);
+    }
+
+    body.menu-open .menu-toggle span {
+      opacity: 0;
+    }
+
+    body.menu-open .menu-toggle::before {
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    body.menu-open .menu-toggle::after {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      isolation: isolate;
+      color: var(--warm);
+      background: var(--carbon);
+    }
+
+    .hero-media {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.03);
+      filter: saturate(.83) contrast(1.04);
+      animation: heroDrift 15s var(--ease) infinite alternate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(10, 12, 10, .88), rgba(10, 12, 10, .55) 40%, rgba(10, 12, 10, .18) 74%, rgba(10, 12, 10, .44)),
+        linear-gradient(180deg, rgba(10, 12, 10, .65) 0%, rgba(10, 12, 10, .08) 42%, rgba(10, 12, 10, .84) 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      z-index: -1;
+      height: 42%;
+      background: linear-gradient(180deg, transparent, var(--warm));
+      opacity: .08;
+    }
+
+    .hero-inner {
+      width: min(var(--max), calc(100% - 44px));
+      margin-inline: auto;
+      padding: 152px 0 36px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: clamp(40px, 7vw, 92px);
+      align-items: end;
+    }
+
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 36px;
+      padding: 8px 12px;
+      border: 1px solid rgba(245, 239, 223, .24);
+      border-radius: 999px;
+      background: rgba(245, 239, 223, .08);
+      color: rgba(245, 239, 223, .82);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      backdrop-filter: blur(14px);
+    }
+
+    .availability::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--sand-300);
+      box-shadow: 0 0 0 6px rgba(217, 202, 168, .13);
+    }
+
+    .hero-title {
+      max-width: 980px;
+      margin-top: 26px;
+      font-family: var(--serif);
+      font-size: clamp(4rem, 10.5vw, 9.5rem);
+      font-weight: 400;
+      letter-spacing: -0.055em;
+      line-height: .84;
+      text-shadow: 0 20px 54px rgba(0, 0, 0, .36);
+    }
+
+    .hero-title em {
+      color: var(--sand-300);
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin-top: 28px;
+      color: rgba(245, 239, 223, .82);
+      font-size: clamp(1.05rem, 1.6vw, 1.28rem);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 36px;
+    }
+
+    .hero-panel {
+      border: 1px solid rgba(245, 239, 223, .18);
+      border-radius: 8px;
+      background: rgba(12, 15, 12, .52);
+      box-shadow: var(--shadow-deep);
+      backdrop-filter: blur(20px);
+      overflow: hidden;
+    }
+
+    .hero-panel-header {
+      padding: 24px 24px 18px;
+      border-bottom: 1px solid rgba(245, 239, 223, .13);
+    }
+
+    .hero-panel-header p {
+      color: var(--sand-300);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .hero-panel-header strong {
+      display: block;
+      margin-top: 6px;
+      color: var(--warm);
+      font-family: var(--serif);
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .hero-facts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-fact {
+      min-height: 126px;
+      padding: 20px 18px;
+      border-right: 1px solid rgba(245, 239, 223, .13);
+      border-bottom: 1px solid rgba(245, 239, 223, .13);
+    }
+
+    .hero-fact:nth-child(2n) {
+      border-right: 0;
+    }
+
+    .hero-fact:nth-last-child(-n+2) {
+      border-bottom: 0;
+    }
+
+    .hero-fact b {
+      display: block;
+      color: var(--warm);
+      font-family: var(--serif);
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -.03em;
+    }
+
+    .hero-fact span {
+      display: block;
+      margin-top: 8px;
+      color: rgba(245, 239, 223, .66);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+
+    .hero-scroll {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 74px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(245, 239, 223, .18);
+      color: rgba(245, 239, 223, .62);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .hero-scroll span {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-scroll span::before {
+      content: "";
+      width: 54px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .trust-strip {
+      background: var(--carbon);
+      color: var(--warm);
+      border-block: 1px solid rgba(232, 221, 195, .12);
+    }
+
+    .trust-grid {
+      width: min(var(--max), calc(100% - 44px));
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .trust-item {
+      padding: 30px 26px;
+      border-right: 1px solid rgba(232, 221, 195, .11);
+    }
+
+    .trust-item:last-child {
+      border-right: 0;
+    }
+
+    .trust-item span {
+      display: block;
+      color: var(--sand-300);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .trust-item strong {
+      display: block;
+      margin-top: 8px;
+      color: rgba(245, 239, 223, .88);
+      font-family: var(--serif);
+      font-size: clamp(1.3rem, 2vw, 1.75rem);
+      font-weight: 400;
+      line-height: 1.12;
+    }
+
+    section {
+      position: relative;
+      z-index: 1;
+      padding: clamp(78px, 10vw, 136px) 0;
+    }
+
+    .about {
+      background: var(--warm);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 470px);
+      gap: clamp(44px, 7vw, 86px);
+      align-items: center;
+    }
+
+    .about-copy {
+      margin-top: 34px;
+      max-width: 650px;
+      color: rgba(23, 24, 22, .72);
+      font-size: 1.02rem;
+      font-weight: 300;
+    }
+
+    .about-copy p + p {
+      margin-top: 18px;
+    }
+
+    .mini-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 36px;
+    }
+
+    .mini-metric {
+      min-height: 130px;
+      padding: 22px 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffaf0;
+      transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
+    }
+
+    .mini-metric:hover {
+      transform: translateY(-4px);
+      border-color: rgba(68, 89, 61, .38);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .mini-metric b {
+      display: block;
+      color: var(--olive-900);
+      font-family: var(--serif);
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -.03em;
+    }
+
+    .mini-metric span {
+      display: block;
+      margin-top: 10px;
+      color: var(--stone);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      line-height: 1.55;
+      text-transform: uppercase;
+    }
+
+    .portrait {
+      position: relative;
+      min-height: 620px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      background: var(--olive-900);
+    }
+
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      min-height: 620px;
+      object-fit: cover;
+      filter: saturate(.82) contrast(1.02);
+      transition: transform .9s var(--ease);
+    }
+
+    .portrait:hover img {
+      transform: scale(1.035);
+    }
+
+    .portrait::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 46%, rgba(0, 0, 0, .64)),
+        linear-gradient(90deg, rgba(0, 0, 0, .32), transparent 46%);
+    }
+
+    .portrait-caption {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      z-index: 2;
+      display: grid;
+      gap: 10px;
+      color: var(--warm);
+    }
+
+    .portrait-caption span {
+      color: var(--sand-300);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .portrait-caption strong {
+      max-width: 360px;
+      font-family: var(--serif);
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .features {
+      color: var(--warm);
+      background:
+        linear-gradient(180deg, rgba(23, 24, 22, .70), rgba(23, 24, 22, .95)),
+        url("assets/fotos-rancho/ChatGPT Image 14 may 2026, 12_27_26.png") center / cover fixed;
+      overflow: hidden;
+    }
+
+    .features .section-heading h2,
+    .features .section-heading p {
+      color: var(--warm);
+    }
+
+    .features .section-heading p {
+      color: rgba(245, 239, 223, .72);
+    }
+
+    .features .eyebrow {
+      color: var(--sand-300);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 58px;
+    }
+
+    .feature-card {
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 28px;
+      border: 1px solid rgba(245, 239, 223, .14);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .055);
+      backdrop-filter: blur(18px);
+      transition: transform .34s var(--ease), background .34s var(--ease), border-color .34s var(--ease);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(217, 202, 168, .48);
+      background: rgba(255, 255, 255, .10);
+    }
+
+    .feature-card .icon {
+      width: 34px;
+      height: 34px;
+      color: var(--sand-300);
+    }
+
+    .feature-card h3 {
+      margin-top: 36px;
+      color: var(--warm);
+      font-family: var(--serif);
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -.02em;
+    }
+
+    .feature-card p {
+      margin-top: 14px;
+      color: rgba(245, 239, 223, .68);
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .feature-card ul {
+      display: grid;
+      gap: 8px;
+      margin-top: 20px;
+      color: rgba(245, 239, 223, .72);
+      font-size: 13px;
+      list-style: none;
+    }
+
+    .feature-card li {
+      position: relative;
+      padding-left: 17px;
+    }
+
+    .feature-card li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .75em;
+      width: 7px;
+      height: 1px;
+      background: var(--sand-300);
+    }
+
+    .location {
+      background: #f2ead8;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(330px, 520px);
+      gap: clamp(42px, 6.8vw, 86px);
+      align-items: start;
+    }
+
+    .route-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 42px;
+    }
+
+    .route-item {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 18px;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(23, 24, 22, .12);
+    }
+
+    .route-icon {
+      width: 48px;
+      height: 48px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(23, 24, 22, .13);
+      border-radius: 50%;
+      color: var(--olive-700);
+      background: rgba(255, 255, 255, .36);
+    }
+
+    .route-item strong {
+      display: block;
+      color: var(--olive-950);
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 450;
+      line-height: 1.2;
+    }
+
+    .route-item span {
+      display: block;
+      color: var(--stone);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .route-time {
+      color: var(--olive-700);
+      font-family: var(--serif);
+      font-size: 27px;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+
+    .map-panel {
+      position: sticky;
+      top: 112px;
+      min-height: 560px;
+      border: 1px solid rgba(23, 24, 22, .13);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--olive-950);
+      box-shadow: var(--shadow-soft);
+      color: var(--warm);
+      isolation: isolate;
+    }
+
+    .map-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(180deg, rgba(8, 10, 8, .08), rgba(8, 10, 8, .02) 42%, rgba(8, 10, 8, .78)),
+        linear-gradient(90deg, rgba(8, 10, 8, .58), transparent 52%);
+      pointer-events: none;
+    }
+
+    .map-panel iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: saturate(.88) contrast(1.04);
+    }
+
+    .map-label {
+      position: absolute;
+      left: 28px;
+      right: 28px;
+      bottom: 28px;
+      z-index: 2;
+      display: grid;
+      gap: 12px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(245, 239, 223, .20);
+    }
+
+    .map-label span {
+      color: var(--sand-300);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .map-label strong {
+      max-width: 370px;
+      font-family: var(--serif);
+      font-size: 31px;
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -.02em;
+    }
+
+    .map-meta {
+      color: rgba(245, 239, 223, .66);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .map-open {
+      width: fit-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 38px;
+      padding: 10px 13px;
+      border: 1px solid rgba(245, 239, 223, .24);
+      border-radius: 4px;
+      background: rgba(23, 24, 22, .62);
+      color: var(--warm);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-decoration: none;
+      text-transform: uppercase;
+      backdrop-filter: blur(12px);
+      transition: background .28s var(--ease), border-color .28s var(--ease), transform .28s var(--ease);
+    }
+
+    .map-open:hover {
+      transform: translateY(-2px);
+      border-color: var(--sand-300);
+      background: rgba(23, 24, 22, .82);
+    }
+
+    .map-open svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .water {
+      background: var(--warm);
+    }
+
+    .water-layout {
+      display: grid;
+      grid-template-columns: minmax(330px, 500px) minmax(0, 1fr);
+      gap: clamp(44px, 7vw, 96px);
+      align-items: center;
+    }
+
+    .water-visual {
+      position: relative;
+      min-height: 620px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--olive-900);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .water-visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 620px;
+      object-fit: cover;
+      filter: saturate(.82) contrast(1.04);
+    }
+
+    .water-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 44%, rgba(0, 0, 0, .68));
+    }
+
+    .water-badge {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--warm);
+    }
+
+    .water-badge b {
+      display: inline-grid;
+      width: 64px;
+      height: 64px;
+      place-items: center;
+      flex: 0 0 auto;
+      border: 1px solid rgba(245, 239, 223, .25);
+      border-radius: 50%;
+      background: rgba(245, 239, 223, .10);
+      color: var(--sand-300);
+      font-family: var(--serif);
+      font-size: 30px;
+      font-weight: 400;
+      backdrop-filter: blur(12px);
+    }
+
+    .water-badge span {
+      max-width: 300px;
+      color: rgba(245, 239, 223, .86);
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1.15;
+    }
+
+    .water-list {
+      display: grid;
+      gap: 18px;
+      margin-top: 42px;
+    }
+
+    .water-item {
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr);
+      gap: 20px;
+      padding: 26px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .water-item:last-child {
+      border-bottom: 0;
+    }
+
+    .water-index {
+      color: var(--olive-700);
+      font-family: var(--serif);
+      font-size: 36px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1;
+    }
+
+    .water-item h3 {
+      color: var(--olive-950);
+      font-family: var(--serif);
+      font-size: clamp(1.35rem, 2vw, 1.75rem);
+      font-weight: 450;
+      line-height: 1.14;
+    }
+
+    .water-item p {
+      margin-top: 8px;
+      color: rgba(23, 24, 22, .68);
+      font-weight: 300;
+    }
+
+    .lots {
+      color: var(--warm);
+      background: var(--carbon);
+    }
+
+    .lots .section-heading h2,
+    .lots .section-heading p {
+      color: var(--warm);
+    }
+
+    .lots .section-heading p {
+      color: rgba(245, 239, 223, .70);
+    }
+
+    .lots .eyebrow {
+      color: var(--sand-300);
+    }
+
+    .lots-wrap {
+      display: grid;
+      grid-template-columns: minmax(0, .74fr) minmax(420px, 1fr);
+      gap: clamp(38px, 6vw, 70px);
+      align-items: start;
+    }
+
+    .lots-copy {
+      position: sticky;
+      top: 112px;
+    }
+
+    .lot-table {
+      border: 1px solid rgba(232, 221, 195, .14);
+      border-radius: 8px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .035);
+    }
+
+    .lot-row {
+      display: grid;
+      grid-template-columns: 1fr .75fr .75fr;
+      align-items: center;
+      min-height: 78px;
+      border-bottom: 1px solid rgba(232, 221, 195, .12);
+    }
+
+    .lot-row:last-child {
+      border-bottom: 0;
+      background: rgba(217, 202, 168, .12);
+    }
+
+    .lot-cell {
+      padding: 18px 24px;
+      color: rgba(245, 239, 223, .78);
+    }
+
+    .lot-cell:not(:last-child) {
+      border-right: 1px solid rgba(232, 221, 195, .10);
+    }
+
+    .lot-head {
+      min-height: 54px;
+      background: rgba(217, 202, 168, .12);
+      color: var(--sand-300);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .lot-name {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--warm);
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    .lot-name i {
+      display: inline-grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border: 1px solid rgba(217, 202, 168, .35);
+      border-radius: 50%;
+      color: var(--sand-300);
+      font-family: var(--sans);
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .lot-total .lot-cell {
+      color: var(--warm);
+      font-weight: 700;
+    }
+
+    .investment {
+      background: var(--warm);
+      overflow: hidden;
+    }
+
+    .investment-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1fr);
+      gap: clamp(44px, 7vw, 88px);
+      align-items: center;
+    }
+
+    .investment-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 40px;
+    }
+
+    .investment-card {
+      min-height: 206px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffaf0;
+      transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
+    }
+
+    .investment-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(68, 89, 61, .35);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .investment-card .icon {
+      color: var(--olive-700);
+      width: 31px;
+      height: 31px;
+    }
+
+    .investment-card h3 {
+      margin-top: 30px;
+      color: var(--olive-950);
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 450;
+      line-height: 1.1;
+    }
+
+    .investment-card p {
+      margin-top: 12px;
+      color: rgba(23, 24, 22, .66);
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.65;
+    }
+
+    .editorial-image {
+      min-height: 720px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--olive-950);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .editorial-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 720px;
+      object-fit: cover;
+      filter: saturate(.82) contrast(1.02);
+    }
+
+    .gallery {
+      padding-bottom: clamp(88px, 10vw, 142px);
+      background: #f2ead8;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 128px;
+      gap: 14px;
+      margin-top: 58px;
+    }
+
+    .gallery-item {
+      position: relative;
+      min-height: 240px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--olive-900);
+      color: var(--warm);
+      box-shadow: 0 20px 50px rgba(23, 24, 22, .10);
+      isolation: isolate;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(.82) contrast(1.04);
+      transition: transform .72s var(--ease), filter .72s var(--ease);
+    }
+
+    .gallery-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, transparent 38%, rgba(0, 0, 0, .62));
+      opacity: .84;
+      transition: opacity .34s var(--ease);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.045);
+      filter: saturate(.94) contrast(1.03);
+    }
+
+    .gallery-item:hover::after {
+      opacity: 1;
+    }
+
+    .gallery-label {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 20px;
+      z-index: 2;
+    }
+
+    .gallery-label span {
+      display: block;
+      color: var(--sand-300);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .gallery-label strong {
+      display: block;
+      margin-top: 6px;
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.08;
+    }
+
+    .gallery-item.large {
+      grid-column: span 6;
+      grid-row: span 4;
+    }
+
+    .gallery-item.medium {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+
+    .gallery-item.wide {
+      grid-column: span 6;
+      grid-row: span 2;
+    }
+
+    .contact {
+      color: var(--warm);
+      background:
+        linear-gradient(90deg, rgba(12, 15, 12, .94), rgba(12, 15, 12, .74)),
+        url("assets/fotos-rancho/Rancho_Dra_snapshot_05-14-2026_13_36_32.jpeg") center / cover;
+    }
+
+    .contact .section-heading h2,
+    .contact .section-heading p {
+      color: var(--warm);
+    }
+
+    .contact .section-heading p {
+      color: rgba(245, 239, 223, .72);
+    }
+
+    .contact .eyebrow {
+      color: var(--sand-300);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .86fr) minmax(360px, 520px);
+      gap: clamp(42px, 6vw, 76px);
+      align-items: start;
+      margin-top: 54px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: 52px minmax(0, 1fr);
+      align-items: center;
+      gap: 18px;
+      padding: 22px;
+      border: 1px solid rgba(245, 239, 223, .16);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .055);
+      color: inherit;
+      text-decoration: none;
+      backdrop-filter: blur(16px);
+      transition: transform .3s var(--ease), background .3s var(--ease), border-color .3s var(--ease);
+    }
+
+    .contact-card:hover {
+      transform: translateX(5px);
+      border-color: rgba(217, 202, 168, .45);
+      background: rgba(255, 255, 255, .10);
+    }
+
+    .contact-icon {
+      width: 52px;
+      height: 52px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--sand-300);
+      color: var(--carbon);
+    }
+
+    .contact-card span {
+      display: block;
+      color: var(--sand-300);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .contact-card strong {
+      display: block;
+      margin-top: 4px;
+      color: var(--warm);
+      font-family: var(--serif);
+      font-size: clamp(1.12rem, 2vw, 1.45rem);
+      font-weight: 400;
+      line-height: 1.18;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-note {
+      margin-top: 28px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(245, 239, 223, .16);
+      color: rgba(245, 239, 223, .62);
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .form-card {
+      border: 1px solid rgba(245, 239, 223, .18);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .065);
+      box-shadow: var(--shadow-deep);
+      padding: clamp(26px, 4vw, 40px);
+      backdrop-filter: blur(18px);
+    }
+
+    .form-card h3 {
+      color: var(--warm);
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 400;
+      line-height: 1.04;
+      letter-spacing: -.02em;
+    }
+
+    .form-card p {
+      margin-top: 10px;
+      margin-bottom: 28px;
+      color: rgba(245, 239, 223, .66);
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: grid;
+      gap: 8px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      color: var(--sand-300);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid rgba(245, 239, 223, .20);
+      border-radius: 4px;
+      outline: 0;
+      background: rgba(0, 0, 0, .18);
+      color: var(--warm);
+      padding: 13px 14px;
+      transition: border-color .24s var(--ease), background .24s var(--ease), box-shadow .24s var(--ease);
+    }
+
+    .form-group textarea {
+      min-height: 116px;
+      resize: vertical;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(245, 239, 223, .34);
+    }
+
+    .form-group select option {
+      background: var(--carbon);
+      color: var(--warm);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--sand-300);
+      background: rgba(0, 0, 0, .28);
+      box-shadow: 0 0 0 4px rgba(217, 202, 168, .10);
+    }
+
+    .form-card .btn {
+      width: 100%;
+      margin-top: 18px;
+    }
+
+    .faq {
+      background: var(--warm);
+    }
+
+    .faq-list {
+      max-width: 920px;
+      margin: 48px auto 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-button {
+      width: 100%;
+      min-height: 82px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 38px;
+      align-items: center;
+      gap: 22px;
+      border: 0;
+      background: transparent;
+      color: var(--olive-950);
+      cursor: pointer;
+      padding: 22px 0;
+      text-align: left;
+    }
+
+    .faq-button h3 {
+      font-family: var(--serif);
+      font-size: clamp(1.22rem, 2.3vw, 1.65rem);
+      font-weight: 450;
+      line-height: 1.16;
+      letter-spacing: -.01em;
+    }
+
+    .faq-plus {
+      width: 38px;
+      height: 38px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(68, 89, 61, .34);
+      border-radius: 50%;
+      color: var(--olive-700);
+      transition: transform .28s var(--ease), background .28s var(--ease), color .28s var(--ease);
+    }
+
+    .faq-button[aria-expanded="true"] .faq-plus {
+      transform: rotate(45deg);
+      background: var(--olive-950);
+      color: var(--warm);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .34s var(--ease);
+    }
+
+    .faq-answer p {
+      max-width: 760px;
+      padding: 0 56px 28px 0;
+      color: rgba(23, 24, 22, .68);
+      font-weight: 300;
+    }
+
+    .footer {
+      padding: 60px 0 36px;
+      border-top: 1px solid rgba(232, 221, 195, .13);
+      background: var(--carbon);
+      color: rgba(245, 239, 223, .62);
+    }
+
+    .footer-grid {
+      width: min(var(--max), calc(100% - 44px));
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: end;
+      margin-inline: auto;
+    }
+
+    .footer-brand {
+      color: var(--warm);
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .footer-tag {
+      margin-top: 12px;
+      color: var(--sand-300);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: flex-end;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: rgba(245, 239, 223, .60);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .24s var(--ease);
+    }
+
+    .footer-links a:hover {
+      color: var(--sand-300);
+    }
+
+    .footer-legal {
+      width: min(var(--max), calc(100% - 44px));
+      margin: 36px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid rgba(232, 221, 195, .10);
+      color: rgba(245, 239, 223, .42);
+      font-size: 12px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 45;
+      width: 58px;
+      height: 58px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(245, 239, 223, .22);
+      border-radius: 50%;
+      background: var(--olive-950);
+      color: var(--warm);
+      box-shadow: 0 18px 38px rgba(0, 0, 0, .26);
+      text-decoration: none;
+      transition: transform .3s var(--ease), background .3s var(--ease), color .3s var(--ease);
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-4px) scale(1.04);
+      background: var(--sand-300);
+      color: var(--carbon);
+    }
+
+    .whatsapp-float svg {
+      width: 28px;
+      height: 28px;
+      fill: currentColor;
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: translateY(14px);
+      transition: transform .72s var(--ease);
+    }
+
+    .reveal.visible {
+      transform: translateY(0);
+    }
+
+    @keyframes heroDrift {
+      from { transform: scale(1.03) translate3d(0, 0, 0); }
+      to { transform: scale(1.09) translate3d(-1.4%, 1%, 0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .nav-links {
+        gap: 0;
+      }
+
+      .nav-links a {
+        padding-inline: 8px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .location-grid,
+      .water-layout,
+      .lots-wrap,
+      .investment-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-panel,
+      .lots-copy,
+      .map-panel {
+        position: relative;
+        top: auto;
+      }
+
+      .hero-panel {
+        max-width: 620px;
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .features {
+        background-attachment: scroll;
+      }
+
+      .editorial-image,
+      .editorial-image img {
+        min-height: 560px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      body.menu-open {
+        overflow: hidden;
+      }
+
+      .nav-shell {
+        align-items: center;
+        padding: 10px 10px 10px 16px;
+      }
+
+      .menu-toggle {
+        display: inline-block;
+        flex: 0 0 auto;
+      }
+
+      .nav-links {
+        position: fixed;
+        left: 17px;
+        right: 17px;
+        top: 96px;
+        display: grid;
+        gap: 8px;
+        padding: 18px;
+        border: 1px solid rgba(245, 239, 223, .18);
+        border-radius: 8px;
+        background: rgba(23, 24, 22, .96);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, .36);
+        backdrop-filter: blur(20px);
+        opacity: 0;
+        transform: translateY(-12px);
+        pointer-events: none;
+        transition: opacity .26s var(--ease), transform .26s var(--ease);
+      }
+
+      body.menu-open .nav-links {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .nav-links a {
+        min-height: 44px;
+        justify-content: center;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero-inner {
+        width: min(100% - 32px, var(--max));
+        padding-top: 138px;
+      }
+
+      .hero-title {
+        font-size: clamp(3.4rem, 18vw, 6.2rem);
+      }
+
+      .hero-scroll {
+        display: none;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .trust-item:nth-child(2n) {
+        border-right: 0;
+      }
+
+      .trust-item:nth-child(-n+2) {
+        border-bottom: 1px solid rgba(232, 221, 195, .11);
+      }
+
+      .mini-metrics,
+      .investment-points {
+        grid-template-columns: 1fr;
+      }
+
+      .portrait,
+      .portrait img,
+      .water-visual,
+      .water-visual img {
+        min-height: 480px;
+      }
+
+      .route-item {
+        grid-template-columns: 44px minmax(0, 1fr);
+      }
+
+      .route-time {
+        grid-column: 2;
+        font-size: 23px;
+      }
+
+      .map-panel {
+        min-height: 480px;
+      }
+
+      .lot-table {
+        overflow-x: auto;
+      }
+
+      .lot-row {
+        min-width: 660px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 180px;
+      }
+
+      .gallery-item.large,
+      .gallery-item.medium,
+      .gallery-item.wide {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+
+      .gallery-item:first-child {
+        grid-column: 1 / -1;
+        grid-row: span 2;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-links {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(100% - 30px, var(--max));
+      }
+
+      .brand strong {
+        font-size: 20px;
+      }
+
+      .brand span {
+        max-width: 210px;
+        letter-spacing: .13em;
+      }
+
+      .availability {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero-copy {
+        font-size: 1rem;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-facts {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-fact,
+      .hero-fact:nth-child(2n),
+      .hero-fact:nth-last-child(-n+2) {
+        border-right: 0;
+        border-bottom: 1px solid rgba(245, 239, 223, .13);
+      }
+
+      .hero-fact:last-child {
+        border-bottom: 0;
+      }
+
+      .trust-grid,
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-item,
+      .trust-item:nth-child(2n) {
+        border-right: 0;
+        border-bottom: 1px solid rgba(232, 221, 195, .11);
+      }
+
+      .trust-item:last-child {
+        border-bottom: 0;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(2.05rem, 12vw, 3.4rem);
+      }
+
+      .feature-card {
+        min-height: 260px;
+      }
+
+      .map-panel {
+        min-height: 420px;
+      }
+
+      .map-panel::before {
+        inset: 22px;
+      }
+
+      .water-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+      }
+
+      .gallery-item,
+      .gallery-item:first-child {
+        min-height: 310px;
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Principal">
+    <div class="nav-shell">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <strong>La Doctora</strong>
+        <span>General Cepeda · Coahuila</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#predio">Predio</a></li>
+        <li><a href="#caracteristicas">Atributos</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#lotes">Lotes</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <a class="btn nav-cta" href="#contacto">Solicitar dossier</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="hero-media" aria-hidden="true">
+      <img src="assets/fotos-rancho/ChatGPT Image 14 may 2026, 12_31_55.png" alt="">
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-grid">
+        <div>
+          <div class="availability">Predio rustico privado en venta</div>
+          <h1 class="hero-title">Rancho <em>La Doctora</em></h1>
+          <p class="hero-copy">
+            461.95 hectáreas en la Sierra Madre Oriental: bosque de pino-encino, dos manantiales naturales, arroyos permanentes y cinco lotes con escrituras individuales.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">
+              Solicitar información
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+            </a>
+            <a class="btn btn-ghost" href="https://wa.me/528444271496" target="_blank" rel="noopener">
+              WhatsApp directo
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Resumen de la propiedad">
+          <div class="hero-panel-header">
+            <p>Ficha privada</p>
+            <strong>Activo territorial con escala, agua y documentación.</strong>
+          </div>
+          <div class="hero-facts">
+            <div class="hero-fact">
+              <b>462</b>
+              <span>Hectáreas totales</span>
+            </div>
+            <div class="hero-fact">
+              <b>5</b>
+              <span>Lotes escriturados</span>
+            </div>
+            <div class="hero-fact">
+              <b>2</b>
+              <span>Manantiales naturales</span>
+            </div>
+            <div class="hero-fact">
+              <b>2,860</b>
+              <span>msnm punto alto</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll para explorar</span>
+        <span>General Cepeda · 30 min</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="trust-strip" aria-label="Argumentos de valor">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <span>Tenencia</span>
+          <strong>Pequeña propiedad privada</strong>
+        </div>
+        <div class="trust-item">
+          <span>Registro</span>
+          <strong>Escrituras individuales</strong>
+        </div>
+        <div class="trust-item">
+          <span>Entorno</span>
+          <strong>Bosque serrano preservado</strong>
+        </div>
+        <div class="trust-item">
+          <span>Uso</span>
+          <strong>Inversión, descanso o conservación</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="predio">
+      <div class="container about-grid">
+        <div class="reveal">
+          <div class="section-heading">
+            <div class="section-kicker"><span class="eyebrow">La propiedad</span></div>
+            <h2>Un rancho de montaña con escala, privacidad y <em>potencial patrimonial</em>.</h2>
+            <p>
+              Rancho La Doctora combina superficie, altitud, agua y certeza jurídica en una ubicación conectada con General Cepeda, Saltillo y Monterrey.
+            </p>
+          </div>
+
+          <div class="about-copy">
+            <p>
+              El predio forma parte de la fracción "Del Nogal", en el Ejido El Nogal, municipio de General Cepeda, Coahuila. Su altitud va de 1,850 a 2,860 metros sobre el nivel del mar, creando un microclima de montaña con vegetación pino-encino y vistas abiertas.
+            </p>
+            <p>
+              La propiedad está subdividida en cinco lotes con escrituras propias, coordenadas UTM y cuadros de construcción notariados. Puede analizarse como compra integral o por lote, de acuerdo con el perfil del inversionista.
+            </p>
+          </div>
+
+          <div class="mini-metrics" aria-label="Datos principales">
+            <div class="mini-metric">
+              <b>1.5 h</b>
+              <span>Distancia estimada a Saltillo</span>
+            </div>
+            <div class="mini-metric">
+              <b>800 m</b>
+              <span>Línea CFE cercana al lindero</span>
+            </div>
+            <div class="mini-metric">
+              <b>1,010 m</b>
+              <span>Desnivel aproximado del predio</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="portrait reveal">
+          <img src="assets/fotos-rancho/efb86302-719b-4427-a08f-27b890cc5f70.jpg" alt="Paisaje serrano con montañas y valle">
+          <figcaption class="portrait-caption">
+            <span>Sierra Madre Oriental</span>
+            <strong>Territorio amplio para proyectos de largo plazo.</strong>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="features" id="caracteristicas">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker"><span class="eyebrow">Atributos destacados</span></div>
+          <h2>Naturaleza, certeza y recursos en una propiedad de <em>alto valor</em>.</h2>
+          <p>
+            Los elementos técnicos del rancho refuerzan su posición como activo territorial: agua permanente, bosque, altitud, accesos y documentación.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="m3 20 7-12 4 6 3-4 4 10"></path><path d="M3 20h18"></path></svg>
+            <div>
+              <h3>Topografía escénica</h3>
+              <p>Combinación de zonas suaves, lomerío y montaña con vistas panorámicas y más de mil metros de desnivel.</p>
+              <ul>
+                <li>Plano a suave: 15-20%</li>
+                <li>Lomerio: 40-45%</li>
+                <li>Montaña: 35-45%</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 2v20"></path><path d="M7 10c0-3 2-5 5-5 3 0 5 2 5 5s-2 5-5 5c-3 0-5-2-5-5Z"></path><path d="M5 22h14"></path></svg>
+            <div>
+              <h3>Bosque pino-encino</h3>
+              <p>Vegetación clímax regional con pino piñonero, encinos y matorral submontano en cotas bajas.</p>
+              <ul>
+                <li>Pinus johannis y P. remota</li>
+                <li>Quercus spp.</li>
+                <li>Potencial de conservación</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 2s6 7 6 12a6 6 0 0 1-12 0C6 9 12 2 12 2Z"></path><path d="M12 20c2-2 3-4 3-7"></path></svg>
+            <div>
+              <h3>Agua natural</h3>
+              <p>Dos manantiales en la parte alta y arroyos que atraviesan la propiedad, incluyendo flujo permanente.</p>
+              <ul>
+                <li>Uso pecuario y riego</li>
+                <li>Agua apta para consumo</li>
+                <li>Recurso poco comun en la region</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 10-13h-7l0-7Z"></path></svg>
+            <div>
+              <h3>Infraestructura cercana</h3>
+              <p>Linea de CFE a aproximadamente 800 metros del lindero, con acceso por carretera General Cepeda - Ejido La Paz.</p>
+              <ul>
+                <li>30 min a cabecera municipal</li>
+                <li>1.5 h a Saltillo</li>
+                <li>2.5 h a Monterrey</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="ubicacion">
+      <div class="container location-grid">
+        <div class="reveal">
+          <div class="section-heading">
+            <div class="section-kicker"><span class="eyebrow">Ubicación estratégica</span></div>
+            <h2>Privacidad serrana con conexión a polos urbanos del noreste.</h2>
+            <p>
+              La ubicación permite preservar una experiencia privada y natural, sin renunciar a conectividad logística con General Cepeda, Saltillo y Monterrey.
+            </p>
+          </div>
+
+          <div class="route-list">
+            <div class="route-item">
+              <div class="route-icon"><svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+              <div>
+                <strong>General Cepeda</strong>
+                <span>Cabecera municipal y servicios básicos</span>
+              </div>
+              <div class="route-time">30 min</div>
+            </div>
+
+            <div class="route-item">
+              <div class="route-icon"><svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4 19V5"></path><path d="M4 5c6-3 10 3 16 0v14c-6 3-10-3-16 0"></path></svg></div>
+              <div>
+                <strong>Saltillo</strong>
+                <span>Servicios médicos, comerciales y transporte</span>
+              </div>
+              <div class="route-time">1.5 h</div>
+            </div>
+
+            <div class="route-item">
+              <div class="route-icon"><svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M3 21h18"></path><path d="M6 21V8l6-4 6 4v13"></path><path d="M10 21v-6h4v6"></path></svg></div>
+              <div>
+                <strong>Monterrey</strong>
+                <span>Mercado de inversión y compradores patrimoniales</span>
+              </div>
+              <div class="route-time">2.5 h</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="map-panel reveal" aria-label="Mapa satelital de ubicación">
+          <iframe
+            title="Ubicación satelital de Rancho La Doctora"
+            src="https://maps.google.com/maps?q=25.238890,-101.422092&ll=25.238890,-101.422092&z=14&t=k&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="map-label">
+            <span>Pin satelital</span>
+            <strong>Fracción Del Nogal, General Cepeda, Coahuila.</strong>
+            <div class="map-meta">25.238890, -101.422092</div>
+            <a class="map-open" href="https://maps.app.goo.gl/PrFuN9dg9N1QYsM59" target="_blank" rel="noopener">
+              Abrir en Google Maps
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="water" id="agua">
+      <div class="container water-layout">
+        <figure class="water-visual reveal">
+          <img src="assets/fotos-rancho/14 may 2026, 12_30_10.png" alt="Arroyo entre montañas y vegetación">
+          <figcaption class="water-badge">
+            <b>2</b>
+            <span>Manantiales naturales en la parte alta del predio.</span>
+          </figcaption>
+        </figure>
+
+        <div class="reveal">
+          <div class="section-heading">
+            <div class="section-kicker"><span class="eyebrow">Recurso hidrico</span></div>
+            <h2>Agua permanente: el atributo que cambia la lectura de valor.</h2>
+            <p>
+              En una zona serrana, la presencia de manantiales y arroyos permanentes incrementa la versatilidad operativa, recreativa y de conservación del predio.
+            </p>
+          </div>
+
+          <div class="water-list">
+            <article class="water-item">
+              <div class="water-index">01</div>
+              <div>
+                <h3>Manantiales en zona alta</h3>
+                <p>Ubicados pegados a la montaña, con régimen permanente y variación estacional natural.</p>
+              </div>
+            </article>
+
+            <article class="water-item">
+              <div class="water-index">02</div>
+              <div>
+                <h3>Arroyo principal permanente</h3>
+                <p>Atraviesa la propiedad durante todo el año, complementado por arroyos secundarios estacionales.</p>
+              </div>
+            </article>
+
+            <article class="water-item">
+              <div class="water-index">03</div>
+              <div>
+                <h3>Usos productivos y de descanso</h3>
+                <p>Agua apta para uso pecuario, riego y consumo, sin riesgos detectados en la información disponible.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lots" id="lotes">
+      <div class="container lots-wrap">
+        <div class="lots-copy reveal">
+          <div class="section-heading">
+            <div class="section-kicker"><span class="eyebrow">Subdivisión patrimonial</span></div>
+            <h2>Cinco lotes con escritura individual y claridad de superficie.</h2>
+            <p>
+              La estructura legal permite analizar la adquisición completa o la compra por lote, conservando trazabilidad de planos, coordenadas y documentación.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Recibir ficha privada</a>
+            <a class="btn btn-ghost" href="#galeria">Ver galería</a>
+          </div>
+        </div>
+
+        <div class="lot-table reveal" role="table" aria-label="Superficie por lote">
+          <div class="lot-row lot-head" role="row">
+            <div class="lot-cell" role="columnheader">Lote</div>
+            <div class="lot-cell" role="columnheader">Superficie</div>
+            <div class="lot-cell" role="columnheader">Metros cuadrados</div>
+          </div>
+          <div class="lot-row" role="row">
+            <div class="lot-cell" role="cell"><span class="lot-name"><i>01</i>Lote 1</span></div>
+            <div class="lot-cell" role="cell">89.99 ha</div>
+            <div class="lot-cell" role="cell">899,982 m²</div>
+          </div>
+          <div class="lot-row" role="row">
+            <div class="lot-cell" role="cell"><span class="lot-name"><i>02</i>Lote 2</span></div>
+            <div class="lot-cell" role="cell">85.00 ha</div>
+            <div class="lot-cell" role="cell">850,000 m²</div>
+          </div>
+          <div class="lot-row" role="row">
+            <div class="lot-cell" role="cell"><span class="lot-name"><i>03</i>Lote 3</span></div>
+            <div class="lot-cell" role="cell">85.00 ha</div>
+            <div class="lot-cell" role="cell">850,000 m²</div>
+          </div>
+          <div class="lot-row" role="row">
+            <div class="lot-cell" role="cell"><span class="lot-name"><i>04</i>Lote 4</span></div>
+            <div class="lot-cell" role="cell">85.02 ha</div>
+            <div class="lot-cell" role="cell">850,018 m²</div>
+          </div>
+          <div class="lot-row" role="row">
+            <div class="lot-cell" role="cell"><span class="lot-name"><i>05</i>Lote 5</span></div>
+            <div class="lot-cell" role="cell">116.93 ha</div>
+            <div class="lot-cell" role="cell">1,169,321 m²</div>
+          </div>
+          <div class="lot-row lot-total" role="row">
+            <div class="lot-cell" role="cell">Total</div>
+            <div class="lot-cell" role="cell">461.95 ha</div>
+            <div class="lot-cell" role="cell">4,619,487 m²</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="investment" id="inversion">
+      <div class="container investment-grid">
+        <div class="reveal">
+          <div class="section-heading">
+            <div class="section-kicker"><span class="eyebrow">Potencial de inversión</span></div>
+            <h2>Un activo flexible para proyectos de descanso, producción o conservación.</h2>
+            <p>
+              La combinación de superficie, agua, bosque, altitud y cercanía urbana abre un abanico de usos sin perder la esencia privada del rancho.
+            </p>
+          </div>
+
+          <div class="investment-points">
+            <article class="investment-card">
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12"></path><path d="M9 21v-7h6v7"></path></svg>
+              <div>
+                <h3>Retiro y cabañas</h3>
+                <p>Proyecto boutique de descanso, hospitality rural o segunda residencia familiar.</p>
+              </div>
+            </article>
+
+            <article class="investment-card">
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg>
+              <div>
+                <h3>Cinegético y ecoturismo</h3>
+                <p>Fauna regional, senderos, miradores y aprovechamiento recreativo controlado.</p>
+              </div>
+            </article>
+
+            <article class="investment-card">
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 2v20"></path><path d="M5 13c4-1 6-4 7-9 1 5 3 8 7 9"></path><path d="M7 21h10"></path></svg>
+              <div>
+                <h3>Conservación y carbono</h3>
+                <p>Vegetación preservada, especies endémicas y potencial de esquemas ambientales.</p>
+              </div>
+            </article>
+
+            <article class="investment-card">
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4 4h16v16H4z"></path><path d="M4 12h16"></path><path d="M12 4v16"></path></svg>
+              <div>
+                <h3>Subdivisión estratégica</h3>
+                <p>Cinco lotes escriturados para venta individual, coinversión o reserva patrimonial.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <figure class="editorial-image reveal">
+          <img src="assets/fotos-rancho/ChatGPT Image 14 may 2026, 12_28_28.png" alt="Sendero y bosque dentro del rancho">
+        </figure>
+      </div>
+    </section>
+
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <div class="section-kicker"><span class="eyebrow">Galería visual</span></div>
+          <h2>Una experiencia territorial con presencia cinematografica.</h2>
+          <p>
+            Las imágenes sirven como base visual aspiracional para el sitio. Al integrar fotografías reales del predio, la experiencia puede elevarse aún más.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item large reveal">
+            <img src="assets/fotos-rancho/Rancho_Dra_snapshot_05-14-2026_13_40_09.jpeg" alt="Vista aérea del territorio serrano">
+            <figcaption class="gallery-label">
+              <span>Acceso y territorio</span>
+              <strong>Privacidad con escala.</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item medium reveal">
+            <img src="assets/fotos-rancho/ChatGPT Image 14 may 2026, 12_30_19.png" alt="Bosque iluminado por luz natural">
+            <figcaption class="gallery-label">
+              <span>Bosque</span>
+              <strong>Pino-encino.</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item medium reveal">
+            <img src="assets/fotos-rancho/ChatGPT Image 14 may 2026, 12_19_54.png" alt="Arroyo natural en montañas">
+            <figcaption class="gallery-label">
+              <span>Agua</span>
+              <strong>Arroyos y manantiales.</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item wide reveal">
+            <img src="assets/fotos-rancho/ChatGPT Image 14 may 2026, 12_31_41.png" alt="Paisaje de montaña con luz al atardecer">
+            <figcaption class="gallery-label">
+              <span>Altitud</span>
+              <strong>Vistas de largo alcance.</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item medium reveal">
+            <img src="assets/fotos-rancho/ChatGPT Image 14 may 2026, 12_25_23.png" alt="Vegetación densa y bosque natural">
+            <figcaption class="gallery-label">
+              <span>Conservación</span>
+              <strong>Naturaleza preservada.</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item medium reveal">
+            <img src="assets/fotos-rancho/Rancho_Dra_snapshot_05-14-2026_13_37_20.jpeg" alt="Paisaje árido de montaña">
+            <figcaption class="gallery-label">
+              <span>Coahuila</span>
+              <strong>Carácter del noreste.</strong>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker"><span class="eyebrow">Contacto privado</span></div>
+          <h2>Solicita el dossier completo y agenda una visita al rancho.</h2>
+          <p>
+            Atención directa con el propietario. Información de precio, planos, documentos y visitas disponibles bajo solicitud.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="reveal">
+            <div class="contact-list">
+              <a href="https://wa.me/528444271496" class="contact-card" target="_blank" rel="noopener">
+                <div class="contact-icon"><svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5Z"></path></svg></div>
+                <div>
+                  <span>WhatsApp</span>
+                  <strong>+52 844 427 1496</strong>
+                </div>
+              </a>
+
+              <a href="mailto:ricardo@aoudadai.com" class="contact-card">
+                <div class="contact-icon"><svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4 4h16v16H4z"></path><path d="m22 6-10 7L2 6"></path></svg></div>
+                <div>
+                  <span>Correo</span>
+                  <strong>ricardo@aoudadai.com</strong>
+                </div>
+              </a>
+
+              <div class="contact-card">
+                <div class="contact-icon"><svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+                <div>
+                  <span>Propietario</span>
+                  <strong>Ricardo Lopez Strozzi</strong>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon"><svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+                <div>
+                  <span>Ubicación</span>
+                  <strong>General Cepeda, Coahuila</strong>
+                </div>
+              </div>
+            </div>
+
+            <p class="contact-note">
+              Se recomienda compartir perfil de compra, uso estimado y rango de presupuesto para recibir informacion ordenada y coordinar una visita eficiente.
+            </p>
+          </div>
+
+          <form class="form-card reveal" onsubmit="enviarFormulario(event)">
+            <h3>Recibir información</h3>
+            <p>Completa los datos clave y se abrirá WhatsApp con el mensaje listo para enviar.</p>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono / WhatsApp</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+52 ..." autocomplete="tel" required>
+              </div>
+
+              <div class="form-group full">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="uso">Interés principal</label>
+                <select id="uso" name="uso">
+                  <option value="">Selecciona una opción</option>
+                  <option>Inversión patrimonial</option>
+                  <option>Rancho de descanso</option>
+                  <option>Ecoturismo / cabanas</option>
+                  <option>Rancho cinegético</option>
+                  <option>Aprovechamiento forestal</option>
+                  <option>Conservación / carbono</option>
+                  <option>Ganadería extensiva</option>
+                  <option>Compra por lote</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="presupuesto">Rango estimado</label>
+                <select id="presupuesto" name="presupuesto">
+                  <option value="">Selecciona un rango</option>
+                  <option>Menos de $10M MXN</option>
+                  <option>$10M - $20M MXN</option>
+                  <option>$20M - $30M MXN</option>
+                  <option>$30M - $40M MXN</option>
+                  <option>Más de $40M MXN</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntame qué información necesitas o cuándo te gustaría visitar el rancho."></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              Enviar por WhatsApp
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <div class="section-kicker"><span class="eyebrow">Preguntas frecuentes</span></div>
+          <h2>Claridad antes de avanzar.</h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item reveal">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <h3>¿Está libre de problemas legales?</h3>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sí. Los cinco lotes tienen escrituras individuales notariadas, subdivisión catastral autorizada por el municipio de General Cepeda e inscripción en el Registro Público de la Propiedad de Coahuila.</p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <h3>¿Se puede comprar solo un lote?</h3>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sí. Cada lote tiene escritura individual y puede venderse por separado. La preferencia puede ser la venta integral, pero los lotes individuales están disponibles para evaluación.</p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <h3>¿Se puede visitar el rancho?</h3>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Si, con cita previa. Las visitas se coordinan por WhatsApp después de una conversación inicial para confirmar perfil de interés y logística.</p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <h3>¿Hay servicios cerca?</h3>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>General Cepeda está a aproximadamente 30 minutos y cuenta con servicios básicos. Saltillo se ubica a alrededor de 1.5 horas, con acceso completo a servicios médicos, comerciales, educativos y de transporte.</p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <h3>¿Hay deudas o gravámenes?</h3>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>La propiedad se presenta libre de gravámenes, hipotecas y adeudos. Se recomienda entregar certificados actualizados de libertad de gravamen al momento del cierre.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Rancho La Doctora</div>
+        <div class="footer-tag">General Cepeda · Coahuila · México</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#predio">Predio</a></li>
+        <li><a href="#lotes">Lotes</a></li>
+        <li><a href="#inversion">Inversión</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-legal">© 2026 Propiedad privada. Información sujeta a verificación documental y disponibilidad.</div>
+  </footer>
+
+  <a href="https://wa.me/528444271496" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.5c-.2 0-.5.1-.7.4-.3.3-1 .9-1 2.3 0 1.4 1 2.7 1.2 2.9.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"></path>
+      <path d="M20.5 3.5C18.4 1.4 15.7 0 12.7 0 6.7 0 1.7 4.9 1.7 11c0 2 .5 3.9 1.5 5.5L1 24l7.7-2c1.6.9 3.4 1.3 5.3 1.3 6.1 0 11-4.9 11-11 0-2.9-1.1-5.7-3.5-7.8M12.7 21.5c-1.7 0-3.4-.5-4.9-1.4l-.4-.2-3.6.9.9-3.5-.2-.4c-1-1.5-1.5-3.3-1.5-5.1 0-5 4.1-9.1 9.1-9.1 2.4 0 4.7.9 6.4 2.7 1.7 1.7 2.7 4 2.7 6.4 0 5.4-4.1 9.7-9.1 9.7"></path>
+    </svg>
+  </a>
+
+  <script>
+    const body = document.body;
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = body.classList.toggle('menu-open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        body.classList.remove('menu-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Abrir menú');
+      });
+    });
+
+    document.querySelectorAll('.faq-button').forEach((button) => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+
+        button.setAttribute('aria-expanded', String(!expanded));
+        answer.style.maxHeight = expanded ? '0px' : `${answer.scrollHeight}px`;
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+    function enviarFormulario(event) {
+      event.preventDefault();
+
+      const nombre = document.getElementById('nombre').value.trim();
+      const telefono = document.getElementById('telefono').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const uso = document.getElementById('uso').value;
+      const presupuesto = document.getElementById('presupuesto').value;
+      const mensaje = document.getElementById('mensaje').value.trim();
+
+      if (!nombre || !telefono) {
+        alert('Por favor completa al menos nombre y teléfono.');
+        return;
+      }
+
+      const lineas = [
+        'Hola Ricardo, me interesa recibir información del Rancho La Doctora.',
+        '',
+        `Nombre: ${nombre}`,
+        `Teléfono: ${telefono}`,
+        email ? `Email: ${email}` : '',
+        uso ? `Interés principal: ${uso}` : '',
+        presupuesto ? `Presupuesto aproximado: ${presupuesto}` : '',
+        mensaje ? `Mensaje: ${mensaje}` : ''
+      ].filter(Boolean);
+
+      const texto = encodeURIComponent(lineas.join('\n'));
+      window.open(`https://wa.me/528444271496?text=${texto}`, '_blank', 'noopener');
+    }
+  </script>
+</body>
+</html>
+
