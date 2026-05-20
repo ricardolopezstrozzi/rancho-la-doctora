@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folleto Rancho La Doctora</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    :root {
+      --carbon: #171816;
+      --olive: #243220;
+      --olive-soft: #40543a;
+      --sand: #d9caa8;
+      --cream: #f8f2e3;
+      --warm: #fffaf0;
+      --stone: #78756d;
+      --line: rgba(23, 24, 22, .16);
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ddd;
+      color: var(--carbon);
+      font-family: var(--sans);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      position: relative;
+      width: 210mm;
+      height: 297mm;
+      overflow: hidden;
+      background: var(--warm);
+      page-break-after: always;
+    }
+
+    .page:last-child {
+      page-break-after: auto;
+    }
+
+    .photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cover {
+      color: var(--cream);
+      background: var(--carbon);
+    }
+
+    .cover::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(9, 11, 9, .92), rgba(9, 11, 9, .44) 56%, rgba(9, 11, 9, .64)),
+        linear-gradient(180deg, rgba(9, 11, 9, .30), rgba(9, 11, 9, .72));
+    }
+
+    .cover .photo {
+      position: absolute;
+      inset: 0;
+      filter: saturate(.88) contrast(1.05);
+    }
+
+    .cover-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      padding: 22mm 18mm 18mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .brand-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16mm;
+      align-items: flex-start;
+      border-bottom: 1px solid rgba(248, 242, 227, .24);
+      padding-bottom: 8mm;
+    }
+
+    .brand {
+      font-family: var(--serif);
+      font-size: 19pt;
+      line-height: 1;
+      font-weight: 600;
+    }
+
+    .tag {
+      margin-top: 2.5mm;
+      color: rgba(248, 242, 227, .72);
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .label {
+      color: var(--sand);
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: .22em;
+      line-height: 1.55;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -.03em;
+      margin: 0;
+    }
+
+    .cover h1 {
+      max-width: 145mm;
+      font-size: 62pt;
+      line-height: .9;
+      margin-top: 8mm;
+    }
+
+    .cover h1 em {
+      color: var(--sand);
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .cover-copy {
+      max-width: 128mm;
+      margin-top: 8mm;
+      color: rgba(248, 242, 227, .82);
+      font-size: 13pt;
+      line-height: 1.55;
+      font-weight: 300;
+    }
+
+    .cover-bottom {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid rgba(248, 242, 227, .20);
+      background: rgba(12, 15, 12, .62);
+      backdrop-filter: blur(10px);
+    }
+
+    .stat {
+      min-height: 28mm;
+      padding: 7mm 6mm;
+      border-right: 1px solid rgba(248, 242, 227, .16);
+    }
+
+    .stat:last-child {
+      border-right: 0;
+    }
+
+    .stat b {
+      display: block;
+      color: var(--cream);
+      font-family: var(--serif);
+      font-size: 25pt;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 3mm;
+      color: rgba(248, 242, 227, .68);
+      font-size: 6.8pt;
+      font-weight: 700;
+      letter-spacing: .16em;
+      line-height: 1.45;
+      text-transform: uppercase;
+    }
+
+    .content {
+      padding: 18mm;
+    }
+
+    .dark {
+      background: var(--carbon);
+      color: var(--cream);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 1fr 42mm;
+      gap: 14mm;
+      align-items: end;
+      padding-bottom: 9mm;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 10mm;
+    }
+
+    .dark .section-head {
+      border-color: rgba(248, 242, 227, .16);
+    }
+
+    .section-head h2 {
+      margin-top: 3mm;
+      font-size: 34pt;
+      line-height: 1;
+      color: inherit;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--stone);
+      font-size: 9.4pt;
+      line-height: 1.55;
+    }
+
+    .dark .section-head p {
+      color: rgba(248, 242, 227, .68);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10mm;
+      align-items: stretch;
+    }
+
+    .image-card {
+      position: relative;
+      min-height: 128mm;
+      overflow: hidden;
+      border-radius: 3mm;
+      background: var(--olive);
+    }
+
+    .image-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, .66));
+    }
+
+    .image-caption {
+      position: absolute;
+      left: 7mm;
+      right: 7mm;
+      bottom: 7mm;
+      z-index: 2;
+      color: var(--cream);
+      font-family: var(--serif);
+      font-size: 18pt;
+      line-height: 1.08;
+    }
+
+    .facts {
+      display: grid;
+      gap: 4mm;
+    }
+
+    .fact-row {
+      display: grid;
+      grid-template-columns: 38mm 1fr;
+      gap: 8mm;
+      padding: 5mm 0;
+      border-bottom: 1px solid var(--line);
+      align-items: baseline;
+    }
+
+    .fact-row span {
+      color: var(--stone);
+      font-size: 7.3pt;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .fact-row strong {
+      color: var(--olive);
+      font-family: var(--serif);
+      font-size: 15pt;
+      font-weight: 400;
+      line-height: 1.22;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5mm;
+    }
+
+    .card {
+      min-height: 48mm;
+      padding: 7mm;
+      border: 1px solid rgba(248, 242, 227, .16);
+      background: rgba(255, 255, 255, .055);
+      border-radius: 2mm;
+    }
+
+    .card h3 {
+      color: var(--cream);
+      font-size: 18pt;
+      line-height: 1.08;
+      margin-top: 8mm;
+    }
+
+    .card p {
+      color: rgba(248, 242, 227, .68);
+      font-size: 8.5pt;
+      line-height: 1.55;
+      margin: 4mm 0 0;
+    }
+
+    .mini-icon {
+      width: 8mm;
+      height: 8mm;
+      color: var(--sand);
+    }
+
+    .mini-icon svg {
+      width: 100%;
+      height: 100%;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .lots-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6mm;
+      overflow: hidden;
+      border: 1px solid rgba(248, 242, 227, .18);
+    }
+
+    .lots-table th,
+    .lots-table td {
+      padding: 5mm;
+      border-bottom: 1px solid rgba(248, 242, 227, .14);
+      border-right: 1px solid rgba(248, 242, 227, .12);
+      text-align: left;
+    }
+
+    .lots-table th {
+      color: var(--sand);
+      font-size: 7pt;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .lots-table td {
+      color: rgba(248, 242, 227, .84);
+      font-size: 10pt;
+    }
+
+    .lots-table td:first-child {
+      color: var(--cream);
+      font-family: var(--serif);
+      font-size: 13pt;
+    }
+
+    .lots-table tr:last-child td {
+      border-bottom: 0;
+      color: var(--cream);
+      font-weight: 700;
+      background: rgba(217, 202, 168, .11);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      grid-template-rows: 62mm 62mm;
+      gap: 5mm;
+      margin-top: 8mm;
+    }
+
+    .gallery-grid .image-card {
+      min-height: auto;
+      border-radius: 2mm;
+    }
+
+    .gallery-grid .large {
+      grid-row: 1 / span 2;
+    }
+
+    .investment-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5mm;
+      margin-top: 8mm;
+    }
+
+    .investment-item {
+      min-height: 35mm;
+      padding: 6mm;
+      background: #fffaf0;
+      border: 1px solid var(--line);
+      border-radius: 2mm;
+    }
+
+    .investment-item h3 {
+      color: var(--olive);
+      font-size: 15pt;
+      line-height: 1.08;
+    }
+
+    .investment-item p {
+      margin: 3mm 0 0;
+      color: rgba(23, 24, 22, .70);
+      font-size: 8.4pt;
+      line-height: 1.5;
+    }
+
+    .contact-page {
+      background: var(--carbon);
+      color: var(--cream);
+    }
+
+    .contact-hero {
+      position: absolute;
+      inset: 0;
+      opacity: .52;
+    }
+
+    .contact-page::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(9, 11, 9, .94), rgba(9, 11, 9, .70)),
+        linear-gradient(180deg, rgba(9, 11, 9, .22), rgba(9, 11, 9, .92));
+    }
+
+    .contact-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      padding: 20mm 18mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact-title h2 {
+      margin-top: 5mm;
+      font-size: 45pt;
+      line-height: .98;
+      max-width: 150mm;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8mm;
+      margin-top: 12mm;
+    }
+
+    .contact-card {
+      padding: 7mm;
+      border: 1px solid rgba(248, 242, 227, .18);
+      background: rgba(255, 255, 255, .06);
+      border-radius: 2mm;
+    }
+
+    .contact-card span {
+      display: block;
+      color: var(--sand);
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .contact-card strong {
+      display: block;
+      margin-top: 3mm;
+      color: var(--cream);
+      font-family: var(--serif);
+      font-size: 17pt;
+      font-weight: 400;
+      line-height: 1.14;
+      word-break: break-word;
+    }
+
+    .note {
+      color: rgba(248, 242, 227, .68);
+      font-size: 8.5pt;
+      line-height: 1.55;
+      max-width: 150mm;
+    }
+
+    .url {
+      color: var(--sand);
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .footer-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12mm;
+      align-items: flex-end;
+      padding-top: 8mm;
+      border-top: 1px solid rgba(248, 242, 227, .18);
+      color: rgba(248, 242, 227, .56);
+      font-size: 7.5pt;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <section class="page cover">
+    <img class="photo" src="assets/fotos-rancho/ChatGPT Image 14 may 2026, 12_31_55.png" alt="Vista panorámica del rancho">
+    <div class="cover-content">
+      <header class="brand-row">
+        <div>
+          <div class="brand">La Doctora</div>
+          <div class="tag">General Cepeda · Coahuila</div>
+        </div>
+        <div class="label">Predio rústico privado en venta</div>
+      </header>
+
+      <main>
+        <div class="label">Dossier de propiedad</div>
+        <h1>Rancho <em>La Doctora</em></h1>
+        <p class="cover-copy">
+          461.95 hectáreas en la Sierra Madre Oriental: bosque de pino-encino, dos manantiales naturales, arroyos permanentes y cinco lotes con escrituras individuales.
+        </p>
+      </main>
+
+      <div class="cover-bottom">
+        <div class="stat">
+          <b>462</b>
+          <span>Hectáreas totales</span>
+        </div>
+        <div class="stat">
+          <b>5</b>
+          <span>Lotes escriturados</span>
+        </div>
+        <div class="stat">
+          <b>2</b>
+          <span>Manantiales naturales</span>
+        </div>
+        <div class="stat">
+          <b>2,860</b>
+          <span>msnm punto alto</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="content">
+      <div class="section-head">
+        <div>
+          <div class="label">La propiedad</div>
+          <h2>Un rancho de montaña con escala y certeza jurídica.</h2>
+        </div>
+        <p>Activo territorial privado con superficie, altitud, agua y documentación para compra patrimonial o proyecto de inversión.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="facts">
+          <div class="fact-row">
+            <span>Tenencia</span>
+            <strong>Propiedad privada</strong>
+          </div>
+          <div class="fact-row">
+            <span>Ubicación</span>
+            <strong>Fracción Del Nogal, General Cepeda, Coahuila</strong>
+          </div>
+          <div class="fact-row">
+            <span>Superficie</span>
+            <strong>461.95 hectáreas · 4,619,487 m²</strong>
+          </div>
+          <div class="fact-row">
+            <span>Altitud</span>
+            <strong>1,850 a 2,860 msnm</strong>
+          </div>
+          <div class="fact-row">
+            <span>Agua</span>
+            <strong>2 manantiales y arroyos permanentes</strong>
+          </div>
+          <div class="fact-row">
+            <span>Acceso</span>
+            <strong>Carretera General Cepeda - Ejido La Paz</strong>
+          </div>
+          <div class="fact-row">
+            <span>Servicios</span>
+            <strong>Línea CFE a aproximadamente 800 metros</strong>
+          </div>
+        </div>
+
+        <figure class="image-card">
+          <img class="photo" src="assets/fotos-rancho/efb86302-719b-4427-a08f-27b890cc5f70.jpg" alt="Paisaje serrano del rancho">
+          <figcaption class="image-caption">Territorio serrano con bosque pino-encino.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="page dark">
+    <div class="content">
+      <div class="section-head">
+        <div>
+          <div class="label">Atributos destacados</div>
+          <h2>Naturaleza, agua y topografía con valor patrimonial.</h2>
+        </div>
+        <p>Condiciones naturales poco comunes para proyectos de descanso, ecoturismo, conservación, uso cinegético o reserva familiar.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="mini-icon"><svg viewBox="0 0 24 24"><path d="m3 20 7-12 4 6 3-4 4 10"></path><path d="M3 20h18"></path></svg></div>
+          <h3>Topografía escénica</h3>
+          <p>Combinación de zonas suaves, lomerío y montaña, con más de mil metros de desnivel aproximado y vistas panorámicas.</p>
+        </article>
+        <article class="card">
+          <div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M12 2v20"></path><path d="M7 10c0-3 2-5 5-5s5 2 5 5-2 5-5 5-5-2-5-5Z"></path></svg></div>
+          <h3>Bosque pino-encino</h3>
+          <p>Vegetación clímax regional con pino piñonero, encinos y matorral submontano en cotas bajas.</p>
+        </article>
+        <article class="card">
+          <div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M12 2s6 7 6 12a6 6 0 0 1-12 0C6 9 12 2 12 2Z"></path></svg></div>
+          <h3>Agua natural</h3>
+          <p>Dos manantiales en la parte alta del predio y arroyos con flujo permanente y estacional.</p>
+        </article>
+        <article class="card">
+          <div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 10-13h-7V2Z"></path></svg></div>
+          <h3>Conectividad</h3>
+          <p>General Cepeda a 30 minutos, Saltillo a 1.5 horas y Monterrey a 2.5 horas aproximadamente.</p>
+        </article>
+      </div>
+
+      <table class="lots-table">
+        <thead>
+          <tr>
+            <th>Lote</th>
+            <th>Superficie</th>
+            <th>Metros cuadrados</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Lote 1</td><td>89.99 ha</td><td>899,982 m²</td></tr>
+          <tr><td>Lote 2</td><td>85.00 ha</td><td>850,000 m²</td></tr>
+          <tr><td>Lote 3</td><td>85.00 ha</td><td>850,000 m²</td></tr>
+          <tr><td>Lote 4</td><td>85.02 ha</td><td>850,018 m²</td></tr>
+          <tr><td>Lote 5</td><td>116.93 ha</td><td>1,169,321 m²</td></tr>
+          <tr><td>Total</td><td>461.95 ha</td><td>4,619,487 m²</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="content">
+      <div class="section-head">
+        <div>
+          <div class="label">Galería y potencial</div>
+          <h2>Un predio flexible para proyectos de largo plazo.</h2>
+        </div>
+        <p>La combinación de superficie, agua, bosque, altitud y cercanía urbana abre varias líneas de uso sin perder privacidad.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="image-card large">
+          <img class="photo" src="assets/fotos-rancho/Rancho_Dra_snapshot_05-14-2026_13_40_09.jpeg" alt="Vista aérea del rancho">
+          <figcaption class="image-caption">Escala territorial y relieve serrano.</figcaption>
+        </figure>
+        <figure class="image-card">
+          <img class="photo" src="assets/fotos-rancho/14 may 2026, 12_30_10.png" alt="Manantial natural">
+          <figcaption class="image-caption">Agua natural.</figcaption>
+        </figure>
+        <figure class="image-card">
+          <img class="photo" src="assets/fotos-rancho/ChatGPT Image 14 may 2026, 12_30_19.png" alt="Bosque dentro del predio">
+          <figcaption class="image-caption">Bosque preservado.</figcaption>
+        </figure>
+      </div>
+
+      <div class="investment-list">
+        <article class="investment-item">
+          <h3>Retiro y cabañas</h3>
+          <p>Proyecto boutique de descanso, hospitality rural o segunda residencia familiar.</p>
+        </article>
+        <article class="investment-item">
+          <h3>Cinegético y ecoturismo</h3>
+          <p>Fauna regional, senderos, miradores y aprovechamiento recreativo controlado.</p>
+        </article>
+        <article class="investment-item">
+          <h3>Conservación y carbono</h3>
+          <p>Vegetación preservada, especies endémicas y potencial de esquemas ambientales.</p>
+        </article>
+        <article class="investment-item">
+          <h3>Reserva patrimonial</h3>
+          <p>Cinco lotes escriturados para venta individual, coinversión o patrimonio familiar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page contact-page">
+    <img class="photo contact-hero" src="assets/fotos-rancho/Rancho_Dra_snapshot_05-14-2026_13_36_32.jpeg" alt="Vista satelital del rancho">
+    <div class="contact-content">
+      <div>
+        <div class="contact-title">
+          <div class="label">Contacto privado</div>
+          <h2>Solicita el dossier completo y agenda una visita.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span>WhatsApp</span>
+            <strong>+52 844 427 1496</strong>
+          </div>
+          <div class="contact-card">
+            <span>Correo</span>
+            <strong>ricardo@aoudadai.com</strong>
+          </div>
+          <div class="contact-card">
+            <span>Propietario</span>
+            <strong>Ricardo López Strozzi</strong>
+          </div>
+          <div class="contact-card">
+            <span>Ubicación</span>
+            <strong>General Cepeda, Coahuila</strong>
+          </div>
+        </div>
+
+        <p class="note">
+          Coordenadas de referencia: <span class="url">25.238890, -101.422092</span><br>
+          Sitio web público: <span class="url">https://ricardolopezstrozzi.github.io/rancho-la-doctora/</span>
+        </p>
+      </div>
+
+      <div class="footer-line">
+        <div>Rancho La Doctora · General Cepeda, Coahuila · México</div>
+        <div>Información sujeta a verificación documental y disponibilidad.</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
