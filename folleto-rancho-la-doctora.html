@@ -198,6 +198,11 @@
       color: var(--cream);
     }
 
+    .dark .content {
+      padding-top: 15mm;
+      padding-bottom: 13mm;
+    }
+
     .section-head {
       display: grid;
       grid-template-columns: 1fr 42mm;
@@ -210,6 +215,8 @@
 
     .dark .section-head {
       border-color: rgba(248, 242, 227, .16);
+      padding-bottom: 7mm;
+      margin-bottom: 7mm;
     }
 
     .section-head h2 {
@@ -301,8 +308,8 @@
     }
 
     .card {
-      min-height: 48mm;
-      padding: 7mm;
+      min-height: 40mm;
+      padding: 5.5mm;
       border: 1px solid rgba(248, 242, 227, .16);
       background: rgba(255, 255, 255, .055);
       border-radius: 2mm;
@@ -310,16 +317,16 @@
 
     .card h3 {
       color: var(--cream);
-      font-size: 18pt;
+      font-size: 16pt;
       line-height: 1.08;
-      margin-top: 8mm;
+      margin-top: 5mm;
     }
 
     .card p {
       color: rgba(248, 242, 227, .68);
-      font-size: 8.5pt;
+      font-size: 8pt;
       line-height: 1.55;
-      margin: 4mm 0 0;
+      margin: 2.8mm 0 0;
     }
 
     .mini-icon {
@@ -341,14 +348,14 @@
     .lots-table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 6mm;
+      margin-top: 5mm;
       overflow: hidden;
       border: 1px solid rgba(248, 242, 227, .18);
     }
 
     .lots-table th,
     .lots-table td {
-      padding: 5mm;
+      padding: 3.6mm 5mm;
       border-bottom: 1px solid rgba(248, 242, 227, .14);
       border-right: 1px solid rgba(248, 242, 227, .12);
       text-align: left;
@@ -369,7 +376,7 @@
     .lots-table td:first-child {
       color: var(--cream);
       font-family: var(--serif);
-      font-size: 13pt;
+      font-size: 12pt;
     }
 
     .lots-table tr:last-child td {
