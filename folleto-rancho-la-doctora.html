@@ -394,6 +394,25 @@
       margin-top: 8mm;
     }
 
+    .location-page .content {
+      padding-top: 14mm;
+      padding-bottom: 12mm;
+    }
+
+    .location-page .section-head {
+      padding-bottom: 6mm;
+      margin-bottom: 7mm;
+    }
+
+    .location-page .section-head h2 {
+      font-size: 31pt;
+    }
+
+    .location-page .gallery-grid {
+      grid-template-rows: 49mm 49mm;
+      margin-top: 6mm;
+    }
+
     .gallery-grid .image-card {
       min-height: auto;
       border-radius: 2mm;
@@ -418,6 +437,26 @@
       border-radius: 2mm;
     }
 
+    .location-page .investment-list {
+      gap: 4mm;
+      margin-top: 6mm;
+    }
+
+    .location-page .investment-item {
+      min-height: 27mm;
+      padding: 4.5mm 6mm;
+    }
+
+    .location-page .investment-item h3 {
+      font-size: 13.5pt;
+    }
+
+    .location-page .investment-item p {
+      margin-top: 2mm;
+      font-size: 7.6pt;
+      line-height: 1.4;
+    }
+
     .investment-item h3 {
       color: var(--olive);
       font-size: 15pt;
@@ -429,6 +468,53 @@
       color: rgba(23, 24, 22, .70);
       font-size: 8.4pt;
       line-height: 1.5;
+    }
+
+    .map-cta {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8mm;
+      align-items: center;
+      margin-top: 5mm;
+      padding: 5mm 6mm;
+      border: 1px solid rgba(23, 24, 22, .18);
+      background: var(--olive);
+      color: var(--cream);
+      border-radius: 2mm;
+    }
+
+    .map-cta span {
+      display: block;
+      color: var(--sand);
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .map-cta strong {
+      display: block;
+      margin-top: 2mm;
+      font-family: var(--serif);
+      font-size: 18pt;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .map-cta a {
+      display: inline-flex;
+      min-height: 12mm;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6mm;
+      background: var(--sand);
+      color: var(--carbon);
+      font-size: 8pt;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
     }
 
     .contact-page {
@@ -672,7 +758,7 @@
     </div>
   </section>
 
-  <section class="page">
+  <section class="page location-page">
     <div class="content">
       <div class="section-head">
         <div>
@@ -715,46 +801,13 @@
           <p>Cinco lotes escriturados para venta individual, coinversión o patrimonio familiar.</p>
         </article>
       </div>
-    </div>
-  </section>
 
-  <section class="page contact-page">
-    <img class="photo contact-hero" src="assets/fotos-rancho/Rancho_Dra_snapshot_05-14-2026_13_36_32.jpeg" alt="Vista satelital del rancho">
-    <div class="contact-content">
-      <div>
-        <div class="contact-title">
-          <div class="label">Contacto privado</div>
-          <h2>Solicita el dossier completo y agenda una visita.</h2>
+      <div class="map-cta">
+        <div>
+          <span>Ubicación del rancho</span>
+          <strong>Consulta el pin exacto en Google Maps.</strong>
         </div>
-
-        <div class="contact-grid">
-          <div class="contact-card">
-            <span>WhatsApp</span>
-            <strong>+52 844 427 1496</strong>
-          </div>
-          <div class="contact-card">
-            <span>Correo</span>
-            <strong>ricardo@aoudadai.com</strong>
-          </div>
-          <div class="contact-card">
-            <span>Propietario</span>
-            <strong>Ricardo López Strozzi</strong>
-          </div>
-          <div class="contact-card">
-            <span>Ubicación</span>
-            <strong>General Cepeda, Coahuila</strong>
-          </div>
-        </div>
-
-        <p class="note">
-          Coordenadas de referencia: <span class="url">25.238890, -101.422092</span><br>
-          Sitio web público: <span class="url">https://ricardolopezstrozzi.github.io/rancho-la-doctora/</span>
-        </p>
-      </div>
-
-      <div class="footer-line">
-        <div>Rancho La Doctora · General Cepeda, Coahuila · México</div>
-        <div>Información sujeta a verificación documental y disponibilidad.</div>
+        <a href="https://maps.app.goo.gl/reeQv1abC7rpp3LM6">Ver ubicación</a>
       </div>
     </div>
   </section>
